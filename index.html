@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Fitness Hub</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><!--inlcluding the style.css file( in css folder) via link-->
+<style>
+    /*CSS Resent*/
+    body {
+        font-family: 'Playball', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg3.jpg');
+    }
+
+    /*doubt here in this section*/
+    .left {
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        font-size: 16px;
+        
+        
+        /*border: 2px solid yellow;*/
+
+    }
+
+    .right {
+       /* border: 2px solid green;*/
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /*inline block me 1 hi line me content display hone lagta hai*/
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        padding: 34px 23px;
+        color: white;
+        text-decoration: none;
+        
+        /*words ne niche line ko hatane ke liye*/
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        /*yaha hamm ye sab is liye keh rahe jisse jiss bhi navbar ke niche apna cusor le jaye wo underline ho jaye*/
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 26px;
+
+    }
+
+    .left img {
+        width: 100px;
+        /*filter: invert(0.30);/*invert function kali image ko white banadega in case agar hamne kaali imag ko as a logo choice kiya hai*/
+    }
+
+    .btn {
+        font-family: 'Playball', cursive;
+        /*btn me alag se font family dalni padegi instead of ki hamne body me dal rakhi hai*/
+        margin: 0px 9px;
+        color: white;
+        background-color: grey;
+        padding: 3px 9px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        /*cursor apka haath me convert ho jayega jaise button ke pass jayega*/
+    }
+
+    .btn:hover {
+        background-color: rgb(102, 100, 100);
+    }
+
+    .container {
+       /* border: 2px solid red;*/
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        font-size: large;
+        text-shadow: 23px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 75%;
+        padding: 8px;
+        border: 6px solid black;
+        margin: 11px auto;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/04012019-25.jpg " alt="">
+            <div>Fitness Hub</div>
+        </div>
+        <!--Mid  box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"><bold>Home</bold></a></li>
+                <!--class active means ki jo bhi bhi navbar ko chah raha wo alag se dikhe means that jo abhi khuli ho,abhi hamara home active hai  -->
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1> Join the stupendious gym of India</h1>
+        <form action="noaction.php">
+            <!-- it means sara data noaction.php jiso kisi backend developer ne likhi hai
+    -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+</body>
+
+</html>
